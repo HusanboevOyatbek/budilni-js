@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budilnik</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+
+<body>
+
+    <!-- <main>
+        <section class="">
+            <div class="container mx-auto  flex items-center  justify-center">
+
+                <div class="">
+                    <form id="alarm">
+                        <input type="time">
+                        <button type="submit">Budilnik qoyish</button>
+                    </form>
+                </div>
+               <div class="media">
+                <audio id="audio" controls>
+                    <source src="./media/horor multi muzik.mp3">
+                
+                </audio>
+                
+                <div class="">
+                    <button id="pause-alarm">
+                        Toxtatish
+                    </button>
+                
+                    <button id="play-alarm">
+                        Davom etish
+                    </button>
+               </div>
+                </div>
+            </div>
+        </section>
+    </main> -->
+
+    <main
+        class="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700 text-white">
+        <section
+            class="w-full max-w-[420px] bg-slate-800/80 backdrop-blur-md border border-slate-600 rounded-2xl p-8 flex flex-col items-center gap-6 shadow-[0_0_25px_rgba(0,0,0,0.5)]">
+    
+             
+            <h1 class="text-3xl font-extrabold text-blue-400 tracking-wide drop-shadow-sm">
+                ⏰ Budilnik
+            </h1>
+           
+    
+            
+            <form id="alarm" class="flex flex-col items-center gap-4 w-full">
+                <input type="time"
+                    class="cursor-pointer border border-blue-500 bg-slate-900 rounded-lg px-4 py-2 w-[80%] text-center text-blue-300 font-medium focus:ring-2 focus:ring-blue-500 focus:outline-none shadow-inner" />
+                <button type="submit"
+                    class="bg-gradient-to-r cursor-pointer from-blue-600 to-cyan-500 hover:from-blue-700 hover:to-cyan-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md transition-all duration-300 w-[80%]">
+                    Budilnik qo‘yish
+                </button>
+            </form>
+    
+            
+            <div class="media flex flex-col items-center gap-4 w-full">
+                <audio id="audio" controls class="w-[90%] ">
+                    <source src="./media/horor multi muzik.mp3">
+                </audio>
+    
+                <div class="flex gap-4 w-[90%] justify-center">
+                    <button id="pause-alarm"
+                        class="cursor-pointer bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-semibold px-5 py-2 rounded-lg shadow-md transition-all duration-300">
+                         To‘xtatish
+                    </button>
+    
+                    <button id="play-alarm"
+                        class=" cursor-pointer bg-gradient-to-r from-green-600 to-emerald-500 hover:from-green-700 hover:to-emerald-600 text-white font-semibold px-5 py-2 rounded-lg shadow-md transition-all duration-300">
+                         Davom etish
+                    </button>
+                </div>
+            </div>
+    
+            
+            
+        </section>
+    </main>
+
+
+
+    <script src="  ./js/main.js"></script>
+</body>
+
+</html>
